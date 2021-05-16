@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-need-edit></app-need-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let movie of needtowatch"
+        >
+        {{ movie.name }} ({{ movie.image }})
+      </a>
+    </ul>
+  </div>
+</div>
