@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-seen-edit></app-seen-edit>
+    <hr>
+    <p>The List of Movies I Have Seen</p>
+    <ul class="list-group">
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let movie of seenMovies">
+        {{ movie.name }} {{ movie.image }}
+      </a>
+    </ul>
+  </div>
+</div>
